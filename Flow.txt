@@ -1,0 +1,70 @@
+Story line.
+
+-----------------------------------------
+Part 1 - struggling to implement and finding the code. 
+dataset
+code availability
+LIWC availability
+Enoromous time to run them, feature extraction.
+Poor performance.
+
+-----------------------------------------
+Part 2 - Balancing of dataset.
+underbalancing - poor performance
+overbalancing - amazing accuracy - 95%
+But can this even be possible?
+Is there a better way of giving high accuracy?
+
+-----------------------------------------
+- checkpoint - 100 papers from IEEEXplore was taken and observed.
+Part 3 - SMOTE
+Used the concept of K-nearest neighbours
+
+-----------------------------------------
+Part 4 - is there a methodology for generalizing this across domains?
+The hunt for good quality datasets.
+5 types of datasets that dominated the papers
+1. Ott's golden standard dataset
+2. Rayana's ground truth dataset
+3. OSF Product review dataset
+4. Creating you own dataset
+5. Others - which included semisupervised approach for labeling.
+
+1,2,3 were taken. and found.
+
+-----------------------------------------
+Part 5 - Generalizing deception theory.
+Generalizing deception theory is on two approaches.
+Content/Review based
+Metadata/reviewer based
+
+this is provided in the paper itself. 
+
+But we also referred other papers that offered some suggestions. 
+Hence here comes the reviewer and review based observations.
+Problem - the Ott and OSF datasets didn't provide meta data!!!
+Hence only content based approach could be applied to them. 
+
+But didn't offer a great performance...
+
+Can we do better ???
+
+-----------------------------------------
+Part 6 - Bringing classical NLP methodologies from other papers
+infamous TF-IDF; which gave some results
+But we had to drop the models due to the enoromous amount of features that we had.
+
+CountVectorization - bag of n words (1,2)
+Which gave the best result so far obsered and also the fastest extraction method till now.
+
+-----------------------------------------
+Part 7 - Deploying
+The model was exported, but due to its subjectivity with words based on text.
+We used Review Based deception theory ones.
+Streamed in real time amazon reviews and worked things out.
+
+-----------------------------------------
+Conclusion - "Fake Review Detection"
+No - more like "Spam review Detection"
+Where spam is a subset of Fake Review Detection.
+-----------------------------------------
